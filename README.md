@@ -47,7 +47,7 @@ Untuk mengizinkan bot membaca dan menulis ke Google Sheets kamu, ikuti langkah-l
 
 ### Langkah 4: Bagikan Akses Google Sheets
 1. Buka file `credentials.json` kamu, cari baris `"client_email"`. *Copy* alamat email tersebut (berakhiran `@...iam.gserviceaccount.com`).
-2. Buka file **Google Sheets** Posyandu milikmu. contoh format : https://docs.google.com/spreadsheets/d/11nrPSdmXHT8-KA4Y5sBrOMSsWShKc0dUZIEY6540uEo/edit?usp=sharing
+2. Buka file **Google Sheets** Posyandu milikmu. > [BUKA contoh format](https://docs.google.com/spreadsheets/d/11nrPSdmXHT8-KA4Y5sBrOMSsWShKc0dUZIEY6540uEo/edit?usp=sharing)
 3. Klik tombol **Share** (Bagikan) di pojok kanan atas.
 4. *Paste* alamat email *Service Account* tadi, dan berikan akses sebagai **Editor**.
 5. Salin ID Spreadsheet dari URL-nya (Bagian acak di antara `/d/` dan `/edit`). Masukkan ID ini ke dalam konfigurasi kode bot kamu (di file `sheet.js`).
@@ -60,12 +60,13 @@ Untuk mengizinkan bot membaca dan menulis ke Google Sheets kamu, ikuti langkah-l
 2. cd posyandu-mbg-whastapps-spreadsheet.git
 3. Install semua *dependencies* (pustaka Baileys, Google API, QRCode, dll) dengan menjalankan perintah:
    ```bash
-npm install
-```
+   npm install
+   ```
+
 4. Jalankan bot menggunakan perintah:
    ```bash
-node index.js
-```
+   node index.js
+   ```
 5. Scan QR Code yang muncul di layar terminal menggunakan aplikasi WhatsApp di HP yang akan dijadikan Bot (Buka WA > Perangkat Tertaut > Tautkan Perangkat).
 6. Jika muncul keterangan `✅ Bot WhatsApp Terhubung`, berarti bot sudah siap digunakan!
 
